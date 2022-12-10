@@ -16,15 +16,20 @@
   <body>
     <header>
       <section class="title-container">
-        <h1>Simple, traffic-based pricing</h1>
-        <p>Sign-up for our 30-day trial. No credit card required.</p>
+        <h1>Our pricing plans are designed to fit your needs.</h1>
+        <p>
+          Choose the plan that's right for you, and upgrade or downgrade at any
+          time.
+        </p>
       </section>
     </header>
     <main>
       <section class="cards-container">
-        <div class="card">
+        <div class="card" id="free">
           <div class="plan-container">
-            <h2 class="plan-name">Free</h2>
+            <div class="plan-header">
+              <h2 class="plan-name">Free</h2>
+            </div>
             <p class="price">
               <span class="dollar"> $ 0</span><span class="cents">.00</span>
               <span class="per-month">/month</span>
@@ -47,13 +52,73 @@
               </li>
             </ul>
           </div>
-          <button class="btn">SIGN UP</button>
+          <button id="btn-free" class="btn">SIGN UP</button>
         </div>
-        <div class="card selected">
-          <h2 class="plan-name">Basic</h2>
+        <div class="card selected" id="basic">
+          <div class="plan-container">
+            <div class="plan-header">
+              <h2 class="plan-name">Basic</h2>
+              <span class="recommended">Recommended</span>
+            </div>
+            <p class="price">
+              <span class="dollar"> $ 9</span><span class="cents">.99</span>
+              <span class="per-month">/month</span>
+            </p>
+            <div><hr /></div>
+            <p class="plan-details">
+              The Basic tier includes all of the features and services from the
+              Free tier, plus:
+            </p>
+            <ul class="plan-features">
+              <li class="item">
+                <img src="assets/check.svg" alt="check" />Up to 5 Users
+              </li>
+              <li class="item">
+                <img src="assets/check.svg" alt="check" />2GB Storage
+              </li>
+              <li class="item">
+                <img src="assets/check.svg" alt="check" />Up to 10 Private
+                Projects
+              </li>
+              <li class="item">
+                <img src="assets/check.svg" alt="check" />Advanced design
+                customization options
+              </li>
+            </ul>
+          </div>
+          <button id="btn-basic" class="btn">SIGN UP</button>
         </div>
-        <div class="card">
-          <h2 class="plan-name">Professional</h2>
+        <div class="card" id="professional">
+          <div class="plan-container">
+            <div class="plan-header">
+              <h2 class="plan-name">Professional</h2>
+            </div>
+            <p class="price">
+              <span class="dollar"> $ 29</span><span class="cents">.99</span>
+              <span class="per-month">/month</span>
+            </p>
+            <div><hr /></div>
+            <p class="plan-details">
+              The Professional tier includes all of the features and services
+              from the Free and Basic tiers, plus:
+            </p>
+            <ul class="plan-features">
+              <li class="item">
+                <img src="assets/check.svg" alt="check" />Unlimited Users
+              </li>
+              <li class="item">
+                <img src="assets/check.svg" alt="check" />50GB Storage
+              </li>
+              <li class="item">
+                <img src="assets/check.svg" alt="check" />Advanced SEO tools
+              </li>
+              <li class="item">
+                <img src="assets/check.svg" alt="check" />24/7 email, phone, and
+                live chat support
+              </li>
+            </ul>
+          </div>
+          <button id="btn-professional" class="btn">SIGN UP</button>
         </div>
       </section>
     </main>
